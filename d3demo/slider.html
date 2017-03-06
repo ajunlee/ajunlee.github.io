@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+
+<style>
+
+.ticks {
+  font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #0063f1;
+  stroke-opacity: 1.0;
+  stroke-width: 8px;
+  stroke-linecap: square;
+}
+
+.track-inset {
+  stroke: #6d8df9;
+  stroke-width: 4px;
+  stroke-linecap: square;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 20px;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+</style>
+<body>
+  <div id="divInfo"></div>
+<svg width="960" height="200"></svg>
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+    margin = {right: 50, left: 50},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height");
+
+var x = d3.scaleLinear()
+    .domain([0, 33])
+    .range([0, width])
+    .clamp(true);
+
+var slider = svg.append("g")
+    .attr("class", "slider")
+    .attr("transform", "translate(" + margin.left + "," + height / 2 + ")");
+var _startDate = new Date("2014-04-01");
+function addMonths(curDate, monthInterval){
+  var result = new Date(_startDate);
+  //console.log(result);
+  return new Date(result.setMonth(result.getMonth() + monthInterval));
+}
+function formatDate(curDate, ft){
+  var result;
+  if (ft == undefined){
+    result = curDate.getFullYear() + "-";
+  }else if (ft == "m"){
+    result = "";
+  }else{
+    result = "'" + curDate.getFullYear().toString().substring(2,4) + "-";
+  }
+  var month = (curDate.getMonth() + 1);
+  result += (month < 10 ? "0" + month : month);
+  return result;
+  //return curDate.getFullYear() + "-" + curDate.getMonth();// + "-" + date.getDate();
+}
+
+slider.append("line")
+    .attr("class", "track")
+    .attr("x1", x.range()[0])
+    .attr("x2", x.range()[1])
+  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-inset")
+  .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
+    .attr("class", "track-overlay")
+    .call(d3.drag()
+        .on("start.interrupt", function() { slider.interrupt(); })
+        .on("start drag", function() { 
+          updateValue(x.invert(d3.event.x));
+          //hue(x.invert(d3.event.x)); 
+        }));
+
+slider.insert("g", ".track-overlay")
+    .attr("class", "ticks")
+    .attr("transform", "translate(0," + 18 + ")")
+  .selectAll("text")
+  .data(x.ticks(33))
+  .enter().append("text")
+    .attr("x", x)
+    .attr("text-anchor", "middle")
+    .text(function(d) { 
+      var dt = addMonths(_startDate, d);
+      if (dt.getMonth() == 1){
+        return formatDate(dt,"ym"); 
+      }
+      else{
+        return formatDate(dt,"m"); 
+      }
+      
+    });
+
+var handle = slider.insert("circle", ".track-overlay")
+    .attr("class", "handle")
+    .attr("r", 8);
+
+slider.transition() // Gratuitous intro!
+    .duration(750)
+    .tween("hue", function() {
+      var i = d3.interpolate(0, 70);
+      return function(t) { 
+        updateValue(t);
+      //  hue(i(t)); 
+      };
+    });
+
+function updateValue(data){
+  var val = Math.round(data);
+  handle.attr("cx", x(val));
+  var newDate = addMonths(_startDate, val);
+  //d3.select("#divInfo").text(newDate);
+  d3.select("#divInfo").text(formatDate(newDate));
+}
+function hue(h) {
+  handle.attr("cx", x(h));
+  svg.style("background-color", d3.hsl(h, 0.8, 0.8));
+}
+
+</script>
+</body>
+</html>
