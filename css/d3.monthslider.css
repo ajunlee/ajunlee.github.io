@@ -1,0 +1,44 @@
+﻿.ticks {
+  font: 10px sans-serif;
+}
+.tickline {
+	stroke:black;
+	stroke-width: 1px;
+}
+.tickdot {
+	stroke:black;
+	stroke-width: 3px;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #fff;
+  stroke-opacity: 1.0;
+  stroke-width: 2px;
+  stroke-linecap: square;
+}
+
+.track-inset {
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-linecap: square;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 20px;
+  cursor: crosshair;
+}
+
+
+.handle {
+  fill: #ff0000;
+  stroke: #808080;
+  stroke-opacity: 1.0;
+  stroke-width: 2px;
+}
