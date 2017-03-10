@@ -1,0 +1,87 @@
+﻿body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #fff;
+  width: 1150px;
+  height: 700px;
+  margin-top: 10px;
+}
+
+#main {
+  float: left;
+  width: 900px;
+}
+
+#sidebar {
+  float: right;
+  width: 250px;
+}
+
+#sequence {
+  width: 800px;
+  height: 70px;
+}
+
+#legend {
+  padding: 10px 0 0 3px;
+}
+
+#sequence text, #legend text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#explanation {
+  position: absolute;
+  top: 260px;
+  left: 330px;
+  width: 140px;
+  text-align: center;
+  color: #666;
+  z-index: -1;
+}
+
+#percentage {
+  font-size: 2.5em;
+}
+
+.gridDiv {
+    margin:8px;
+    font-weight:bold;
+    color:white;
+    font-size:larger;
+}
+
+.gridSpan {
+    padding:3px;
+    color:black;
+    display:inline-block;
+}
+
+.gridAct {
+    padding:3px;
+    border:solid 1px #ccc;
+    background-color:#fff;
+    color:blue;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.gridAct:hover {
+    border:solid 1px #666;
+    background-color:#999;
+}
+
+.gridProd {
+    padding:3px;
+    margin-left:3px;
+}
