@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+    <title>OfficeScan key feature adoption rate</title>
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href="../css/viz_main.css" rel="stylesheet" />
+    <link href="../css/d3.monthslider.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <style>
+        body {
+        }
+
+        svg {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 300;
+            fill: #242424;
+            text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+            cursor: default;
+        }
+
+        .legend {
+            font-family: 'Raleway', sans-serif;
+            fill: #333333;
+        }
+
+        .tooltip {
+            fill: #333333;
+        }
+
+        .radarChart {
+            float: left;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #regionList > label {
+            display: block;
+            padding: 6px;
+        }
+
+            #regionList > label > span {
+                padding: 5px;
+            }
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h2>OfficeScan key feature adoption rate</h2>
+        </div>
+        <div class="timeFrame">
+            <div id="divAct">
+                <button id="btnPlay"><i class="fa fa-play"></i></button>
+            </div>
+            <div id="divDate">
+                <div class="year">2017</div>
+                <div class="month">01</div>
+            </div>
+            <svg id="timeSlider" width="620" height="50"></svg>
+
+        </div>
+        <div class="radarChart"></div>
+    </div>
+    <div id="sideBar">
+        <div>
+            <h3>Regions</h3>
+            <div id="regionList"></div>
+        </div>
+        <div>
+            <div>Note : </div>
+            <p>
+                This diagram shows OfficeScan key feature adoption rate in terms of deployed seat count by region. Feature adoption rate = deployed seat count with feature enabled / deployed seat count with feature available (For example, predictive machine learning adoption rate = deployed seat count with machine learning enabled / deployed seat count of all OfficeScan XG). Historical adoption rate is also available by clicking the date scroll-bar.
+            </p>
+        </div>
+    </div>
+
+    <script src="radarChart.v2.js"></script>
+    <script>
+        var margin = { top: 100, right: 100, bottom: 100, left: 100 },
+            width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+            height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+        var radarChartOptions = {
+            w: width,
+            h: height,
+            labelFactor: 1.25,
+            margin: margin,
+            maxValue: 1,
+            levels: 5,
+            roundStrokes: true,
+            wrapWidth: 10
+        };
+        //Call function to draw the Radar chart
+        d3.json("../data/featureGroup.json", function (error, data) {
+            if (error) throw error;
+            RadarChart(".radarChart", data, radarChartOptions);
+            //var _maxDate = new Date(data[data.length - 1].FileMonth);
+            //var _minDate = new Date(data[0].FileMonth);
+            //console.log(_maxDate);
+            //console.log(_minDate);
+
+            //d3.select('#timeframe').call(d3.slider().scale(d3.time.scale().domain([_minDate, _maxDate])).axis(d3.svg.axis()).snap(true).value(_maxDate));
+
+        });
+    </script>
+</body>
+
+</html>

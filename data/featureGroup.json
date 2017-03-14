@@ -1,0 +1,2732 @@
+[
+    {
+        "FileMonth": "2016-01-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 221598, 
+                        "total_client": 2258454, 
+                        "value": 0.09811933295962637, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1028397, 
+                        "total_client": 2241667, 
+                        "value": 0.45876439274878916, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 997503, 
+                        "total_client": 2241667, 
+                        "value": 0.44498268476093905, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2296488, 
+                        "total_client": 2932606, 
+                        "value": 0.7830878065447592, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 11644102, 
+                        "total_client": 31433342, 
+                        "value": 0.37043792543599086, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 275425, 
+                        "total_client": 4048755, 
+                        "value": 0.06802708486929933, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1633708, 
+                        "total_client": 4021192, 
+                        "value": 0.4062745573949217, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1585241, 
+                        "total_client": 4021192, 
+                        "value": 0.3942216636261089, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4303938, 
+                        "total_client": 5206007, 
+                        "value": 0.826725357841432, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 21197528, 
+                        "total_client": 55840901, 
+                        "value": 0.3796057660316047, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 132776, 
+                        "total_client": 3298152, 
+                        "value": 0.04025769582481341, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1091078, 
+                        "total_client": 3275009, 
+                        "value": 0.3331526722521984, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1024626, 
+                        "total_client": 3275009, 
+                        "value": 0.312862040989811, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3125529, 
+                        "total_client": 4135788, 
+                        "value": 0.7557275663065902, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 13456864, 
+                        "total_client": 37397876, 
+                        "value": 0.35982963310536675, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 633719, 
+                        "total_client": 11246688, 
+                        "value": 0.0563471663835611, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3911143, 
+                        "total_client": 11173264, 
+                        "value": 0.3500448033806415, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3767032, 
+                        "total_client": 11173264, 
+                        "value": 0.3371469608164633, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 10984982, 
+                        "total_client": 15501450, 
+                        "value": 0.7086422237919678, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 57600202, 
+                        "total_client": 156593834, 
+                        "value": 0.36783186495069786, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 3920, 
+                        "total_client": 1641327, 
+                        "value": 0.0023883114090001564, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 157960, 
+                        "total_client": 1635396, 
+                        "value": 0.09658822694931381, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 159662, 
+                        "total_client": 1635396, 
+                        "value": 0.09762895347671145, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 1259027, 
+                        "total_client": 3227049, 
+                        "value": 0.3901480888576529, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 11301708, 
+                        "total_client": 31921715, 
+                        "value": 0.35404451170621626, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-02-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 228458, 
+                        "total_client": 2495450, 
+                        "value": 0.091549820673626, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1220029, 
+                        "total_client": 2468940, 
+                        "value": 0.4941509311688417, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1187987, 
+                        "total_client": 2468940, 
+                        "value": 0.4811728920103364, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2449457, 
+                        "total_client": 3150214, 
+                        "value": 0.777552572618876, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 12397754, 
+                        "total_client": 33499103, 
+                        "value": 0.37009211858598123, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 334117, 
+                        "total_client": 4567965, 
+                        "value": 0.07314351138855048, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2037790, 
+                        "total_client": 4525832, 
+                        "value": 0.4502575438063101, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1997166, 
+                        "total_client": 4525832, 
+                        "value": 0.44128151464747256, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4655941, 
+                        "total_client": 5589782, 
+                        "value": 0.8329378498123898, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 23372442, 
+                        "total_client": 60899528, 
+                        "value": 0.3837869153928418, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 146874, 
+                        "total_client": 3705062, 
+                        "value": 0.039641441897598474, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1375717, 
+                        "total_client": 3653295, 
+                        "value": 0.3765688234867428, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1297152, 
+                        "total_client": 3653295, 
+                        "value": 0.3550635795904793, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3356172, 
+                        "total_client": 4420421, 
+                        "value": 0.7592426151264777, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 14636648, 
+                        "total_client": 40121252, 
+                        "value": 0.3648103503848783, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 723596, 
+                        "total_client": 12864002, 
+                        "value": 0.05624968030944025, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 4853280, 
+                        "total_client": 12734274, 
+                        "value": 0.38111948902622955, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 4702865, 
+                        "total_client": 12734274, 
+                        "value": 0.36930766528189984, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 11862176, 
+                        "total_client": 16850294, 
+                        "value": 0.7039744232355827, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 63396670, 
+                        "total_client": 170829160, 
+                        "value": 0.37111152451958435, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 14147, 
+                        "total_client": 2095525, 
+                        "value": 0.006751052838787416, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 219744, 
+                        "total_client": 2086207, 
+                        "value": 0.10533182948767787, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 220560, 
+                        "total_client": 2086207, 
+                        "value": 0.10572296996415025, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 1400606, 
+                        "total_client": 3689877, 
+                        "value": 0.37958067436936244, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 12989826, 
+                        "total_client": 36309277, 
+                        "value": 0.35775501671377263, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-03-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 246915, 
+                        "total_client": 2758521, 
+                        "value": 0.08950992216481223, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1480884, 
+                        "total_client": 2735208, 
+                        "value": 0.5414154974685654, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1448624, 
+                        "total_client": 2735208, 
+                        "value": 0.5296211476421537, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2630658, 
+                        "total_client": 3355254, 
+                        "value": 0.7840413870306093, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 13557050, 
+                        "total_client": 35900046, 
+                        "value": 0.37763322085993983, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 379890, 
+                        "total_client": 5134699, 
+                        "value": 0.07398486259856712, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2596494, 
+                        "total_client": 5106407, 
+                        "value": 0.5084776830362328, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2542859, 
+                        "total_client": 5106407, 
+                        "value": 0.49797421161297956, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 5035001, 
+                        "total_client": 6005332, 
+                        "value": 0.8384217558662869, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 25493980, 
+                        "total_client": 65604133, 
+                        "value": 0.3886032607122481, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 152882, 
+                        "total_client": 4213185, 
+                        "value": 0.03628656230381529, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1922310, 
+                        "total_client": 4178011, 
+                        "value": 0.46010170868386896, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1839885, 
+                        "total_client": 4178011, 
+                        "value": 0.4403734217071233, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3672111, 
+                        "total_client": 4824154, 
+                        "value": 0.7611927397010958, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 16529444, 
+                        "total_client": 43852375, 
+                        "value": 0.37693383767697874, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 809120, 
+                        "total_client": 14810052, 
+                        "value": 0.054633164015899474, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 6406451, 
+                        "total_client": 14699001, 
+                        "value": 0.4358426127054485, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 6217219, 
+                        "total_client": 14699001, 
+                        "value": 0.4229688126424374, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 13037163, 
+                        "total_client": 18654851, 
+                        "value": 0.698861813476827, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 71461176, 
+                        "total_client": 189494078, 
+                        "value": 0.37711561624632933, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 29433, 
+                        "total_client": 2703647, 
+                        "value": 0.010886406398468438, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 406763, 
+                        "total_client": 2679375, 
+                        "value": 0.15181264287380453, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 385851, 
+                        "total_client": 2679375, 
+                        "value": 0.1440078376487054, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 1699393, 
+                        "total_client": 4470111, 
+                        "value": 0.38016796450915874, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 15880702, 
+                        "total_client": 44137524, 
+                        "value": 0.3598004727224844, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-04-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 284231, 
+                        "total_client": 2970141, 
+                        "value": 0.09569613025105542, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1740315, 
+                        "total_client": 2936678, 
+                        "value": 0.5926134904814215, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1713442, 
+                        "total_client": 2936678, 
+                        "value": 0.5834626744913811, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2723973, 
+                        "total_client": 3448219, 
+                        "value": 0.7899651965260908, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 14399556, 
+                        "total_client": 37575065, 
+                        "value": 0.3832210536428879, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 395278, 
+                        "total_client": 5429977, 
+                        "value": 0.07279552012835414, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2901214, 
+                        "total_client": 5381336, 
+                        "value": 0.5391252283819483, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2833594, 
+                        "total_client": 5381336, 
+                        "value": 0.526559575540349, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 5221525, 
+                        "total_client": 6241244, 
+                        "value": 0.8366160656433237, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 27089284, 
+                        "total_client": 68746692, 
+                        "value": 0.3940449090990444, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 172334, 
+                        "total_client": 4415076, 
+                        "value": 0.039033076667309916, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2139446, 
+                        "total_client": 4389116, 
+                        "value": 0.4874434852029429, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2048301, 
+                        "total_client": 4389116, 
+                        "value": 0.46667734459513033, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3742380, 
+                        "total_client": 4919627, 
+                        "value": 0.7607040127229158, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 16891622, 
+                        "total_client": 45139435, 
+                        "value": 0.3742098677132312, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 896199, 
+                        "total_client": 15941768, 
+                        "value": 0.056217039414950716, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 7393096, 
+                        "total_client": 15808406, 
+                        "value": 0.46766865678930564, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 7187215, 
+                        "total_client": 15808406, 
+                        "value": 0.4546451425905939, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 13505456, 
+                        "total_client": 19289993, 
+                        "value": 0.7001275739187671, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 75490072, 
+                        "total_client": 198378635, 
+                        "value": 0.38053529302689276, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 44356, 
+                        "total_client": 3126574, 
+                        "value": 0.014186774405467454, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 612121, 
+                        "total_client": 3101276, 
+                        "value": 0.19737714411745358, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 591878, 
+                        "total_client": 3101276, 
+                        "value": 0.19084983084382043, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 1817578, 
+                        "total_client": 4680903, 
+                        "value": 0.38829644621988535, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 17109610, 
+                        "total_client": 46917443, 
+                        "value": 0.3646748182760088, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-05-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 296231, 
+                        "total_client": 3292722, 
+                        "value": 0.08996538426262526, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1996280, 
+                        "total_client": 3266404, 
+                        "value": 0.6111552643212536, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1980728, 
+                        "total_client": 3266404, 
+                        "value": 0.6063940651554431, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2959598, 
+                        "total_client": 3732020, 
+                        "value": 0.7930284403620559, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 15638610, 
+                        "total_client": 40743972, 
+                        "value": 0.38382634859458475, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 429365, 
+                        "total_client": 5802551, 
+                        "value": 0.07399590283652828, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3254113, 
+                        "total_client": 5756121, 
+                        "value": 0.5653308886314239, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3186632, 
+                        "total_client": 5756121, 
+                        "value": 0.5536075423014909, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 5440485, 
+                        "total_client": 6513947, 
+                        "value": 0.8352055980805493, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 28423250, 
+                        "total_client": 71287242, 
+                        "value": 0.39871440109858647, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 214318, 
+                        "total_client": 4640682, 
+                        "value": 0.04618243611607087, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2310607, 
+                        "total_client": 4602350, 
+                        "value": 0.5020493878127479, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2250108, 
+                        "total_client": 4602350, 
+                        "value": 0.48890414679457234, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3947436, 
+                        "total_client": 5164819, 
+                        "value": 0.7642931920750756, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 18017544, 
+                        "total_client": 47881497, 
+                        "value": 0.3762945005666803, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 985250, 
+                        "total_client": 17353693, 
+                        "value": 0.056774658857915716, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 8326930, 
+                        "total_client": 17214678, 
+                        "value": 0.4837110516966974, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 8155887, 
+                        "total_client": 17214678, 
+                        "value": 0.4737751702355397, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 14322971, 
+                        "total_client": 20388694, 
+                        "value": 0.7024957557359977, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 80398084, 
+                        "total_client": 209675007, 
+                        "value": 0.38344142752311916, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 45336, 
+                        "total_client": 3617738, 
+                        "value": 0.01253158741733094, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 765930, 
+                        "total_client": 3589803, 
+                        "value": 0.21336268313330842, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 738419, 
+                        "total_client": 3589803, 
+                        "value": 0.20569903139531612, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 1975452, 
+                        "total_client": 4977908, 
+                        "value": 0.39684381471091873, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 18318680, 
+                        "total_client": 49762296, 
+                        "value": 0.3681236894696338, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-06-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 356228, 
+                        "total_client": 3446321, 
+                        "value": 0.10336471849256061, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2140495, 
+                        "total_client": 3408166, 
+                        "value": 0.628048927194274, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2209516, 
+                        "total_client": 3408166, 
+                        "value": 0.6483005816031261, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2998915, 
+                        "total_client": 3826053, 
+                        "value": 0.7838142858972419, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 16153570, 
+                        "total_client": 41651715, 
+                        "value": 0.3878248470681219, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 468361, 
+                        "total_client": 6154971, 
+                        "value": 0.07609475333027564, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3526755, 
+                        "total_client": 6093639, 
+                        "value": 0.5787600807990102, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3679011, 
+                        "total_client": 6093639, 
+                        "value": 0.6037461359296145, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 5638100, 
+                        "total_client": 6701840, 
+                        "value": 0.841276425578647, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 29137494, 
+                        "total_client": 73524156, 
+                        "value": 0.39629824516448714, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 210174, 
+                        "total_client": 4198461, 
+                        "value": 0.05005977190213271, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2180527, 
+                        "total_client": 4177138, 
+                        "value": 0.5220145946818132, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2285508, 
+                        "total_client": 4177138, 
+                        "value": 0.5471468742473914, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3407847, 
+                        "total_client": 4597531, 
+                        "value": 0.7412341537229439, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 16808904, 
+                        "total_client": 43899004, 
+                        "value": 0.3828994389029874, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1081863, 
+                        "total_client": 17777636, 
+                        "value": 0.06085527907085059, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 8739340, 
+                        "total_client": 17628968, 
+                        "value": 0.4957374702818679, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 9025311, 
+                        "total_client": 17628968, 
+                        "value": 0.5119591231886064, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 14174620, 
+                        "total_client": 20412974, 
+                        "value": 0.6943926935879113, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 82003588, 
+                        "total_client": 212226189, 
+                        "value": 0.38639711897196627, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 47100, 
+                        "total_client": 3977883, 
+                        "value": 0.011840468912735744, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 891563, 
+                        "total_client": 3950025, 
+                        "value": 0.2257107233498522, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 851276, 
+                        "total_client": 3950025, 
+                        "value": 0.21551154739526965, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2129758, 
+                        "total_client": 5287550, 
+                        "value": 0.4027873022477329, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 19903620, 
+                        "total_client": 53151314, 
+                        "value": 0.37447089266692446, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-07-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 375461, 
+                        "total_client": 3609061, 
+                        "value": 0.1040328772497888, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2286640, 
+                        "total_client": 3581216, 
+                        "value": 0.6385093778202711, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2454119, 
+                        "total_client": 3581220, 
+                        "value": 0.6852745712355007, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3044471, 
+                        "total_client": 3970667, 
+                        "value": 0.7667404494005667, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 16668142, 
+                        "total_client": 42844433, 
+                        "value": 0.38903868794342544, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 460328, 
+                        "total_client": 6208497, 
+                        "value": 0.07414483730925536, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3628720, 
+                        "total_client": 6137319, 
+                        "value": 0.591254911142797, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3908618, 
+                        "total_client": 6137334, 
+                        "value": 0.6368592616924548, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 5676269, 
+                        "total_client": 6696926, 
+                        "value": 0.84759320918284, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 29556994, 
+                        "total_client": 73618086, 
+                        "value": 0.4014909325406803, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 231538, 
+                        "total_client": 4878462, 
+                        "value": 0.047461269555855924, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2553702, 
+                        "total_client": 4846673, 
+                        "value": 0.5268979359655582, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2778574, 
+                        "total_client": 4846681, 
+                        "value": 0.5732941780158421, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3997623, 
+                        "total_client": 5322797, 
+                        "value": 0.7510380350781741, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 19515500, 
+                        "total_client": 50953365, 
+                        "value": 0.3830070889331843, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1137261, 
+                        "total_client": 19444953, 
+                        "value": 0.0584861789071951, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 9558493, 
+                        "total_client": 19280803, 
+                        "value": 0.4957518107518655, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 10178239, 
+                        "total_client": 19280830, 
+                        "value": 0.5278942348436245, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 15195052, 
+                        "total_client": 22163232, 
+                        "value": 0.6855972991664754, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 88980318, 
+                        "total_client": 230205199, 
+                        "value": 0.3865261010026103, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 69934, 
+                        "total_client": 4748933, 
+                        "value": 0.014726255350412398, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1089431, 
+                        "total_client": 4715595, 
+                        "value": 0.23102726167111468, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1036928, 
+                        "total_client": 4715595, 
+                        "value": 0.2198933538609656, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2476689, 
+                        "total_client": 6172842, 
+                        "value": 0.40122345590572384, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 23239682, 
+                        "total_client": 62789315, 
+                        "value": 0.3701216042888826, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-08-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 451377, 
+                        "total_client": 3747326, 
+                        "value": 0.12045309108414907, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2362271, 
+                        "total_client": 3715054, 
+                        "value": 0.6358645123327952, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2597227, 
+                        "total_client": 3715185, 
+                        "value": 0.6990841640456666, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3226687, 
+                        "total_client": 4088842, 
+                        "value": 0.7891444570369801, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 17839880, 
+                        "total_client": 45867056, 
+                        "value": 0.3889475705613197, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 534442, 
+                        "total_client": 6449321, 
+                        "value": 0.082867948424338, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3811500, 
+                        "total_client": 6383060, 
+                        "value": 0.5971273965778169, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 4199431, 
+                        "total_client": 6383155, 
+                        "value": 0.6578926878636036, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 5870009, 
+                        "total_client": 6904818, 
+                        "value": 0.8501323278904672, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 30599946, 
+                        "total_client": 76311974, 
+                        "value": 0.4009848572387867, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 260025, 
+                        "total_client": 4964291, 
+                        "value": 0.05237908092011528, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2586775, 
+                        "total_client": 4934777, 
+                        "value": 0.5241928865275979, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2888177, 
+                        "total_client": 4935125, 
+                        "value": 0.5852287429396419, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4029920, 
+                        "total_client": 5373233, 
+                        "value": 0.7499991159884561, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 19389360, 
+                        "total_client": 51373614, 
+                        "value": 0.3774186491921709, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1342825, 
+                        "total_client": 20474788, 
+                        "value": 0.06558431764958934, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 9981998, 
+                        "total_client": 20309540, 
+                        "value": 0.4914930618812637, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 10840329, 
+                        "total_client": 20310115, 
+                        "value": 0.5337404047195203, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 15803235, 
+                        "total_client": 22994008, 
+                        "value": 0.6872762243102638, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 93132510, 
+                        "total_client": 241970367, 
+                        "value": 0.3848922128551386, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 96981, 
+                        "total_client": 5313850, 
+                        "value": 0.018250609256941764, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1221452, 
+                        "total_client": 5276649, 
+                        "value": 0.23148251854538743, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1155494, 
+                        "total_client": 5276650, 
+                        "value": 0.2189824983654402, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2676619, 
+                        "total_client": 6627115, 
+                        "value": 0.40388902259882314, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 25303324, 
+                        "total_client": 68417723, 
+                        "value": 0.36983580994064946, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-09-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 406436, 
+                        "total_client": 3839393, 
+                        "value": 0.10585944184406233, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2406197, 
+                        "total_client": 3808923, 
+                        "value": 0.6317263436409715, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2670384, 
+                        "total_client": 3809056, 
+                        "value": 0.7010618904001411, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3294617, 
+                        "total_client": 4164001, 
+                        "value": 0.7912142672396092, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 17968156, 
+                        "total_client": 46076020, 
+                        "value": 0.38996762307161076, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 571596, 
+                        "total_client": 6810428, 
+                        "value": 0.08392952689610697, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 4010969, 
+                        "total_client": 6746654, 
+                        "value": 0.5945123315942984, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 4520752, 
+                        "total_client": 6746922, 
+                        "value": 0.6700465782767312, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 6183485, 
+                        "total_client": 7243985, 
+                        "value": 0.8536026786361375, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 32419382, 
+                        "total_client": 81026150, 
+                        "value": 0.4001101125994509, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 248438, 
+                        "total_client": 5491852, 
+                        "value": 0.045237562847651396, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2837881, 
+                        "total_client": 5454544, 
+                        "value": 0.5202783220742192, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3284580, 
+                        "total_client": 5454910, 
+                        "value": 0.6021327574607097, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4444648, 
+                        "total_client": 5888534, 
+                        "value": 0.7547970343722223, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 20878482, 
+                        "total_client": 55642801, 
+                        "value": 0.3752234183897392, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1354078, 
+                        "total_client": 22057218, 
+                        "value": 0.06138933749487356, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 10631730, 
+                        "total_client": 21887651, 
+                        "value": 0.4857410235570733, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 11763482, 
+                        "total_client": 21888418, 
+                        "value": 0.5374295209457348, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 16804295, 
+                        "total_client": 24516635, 
+                        "value": 0.6854242027912885, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 98345744, 
+                        "total_client": 256912488, 
+                        "value": 0.3827986127322857, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 127608, 
+                        "total_client": 5915545, 
+                        "value": 0.021571638792368245, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 0, 
+                        "total_client": 0, 
+                        "value": 0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1376683, 
+                        "total_client": 5877530, 
+                        "value": 0.23422815366318844, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1287766, 
+                        "total_client": 5877530, 
+                        "value": 0.21909985997519366, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 2881545, 
+                        "total_client": 7220115, 
+                        "value": 0.3990995988291045, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 27079724, 
+                        "total_client": 74167517, 
+                        "value": 0.3651156880444036, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-10-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 408688, 
+                        "total_client": 4100114, 
+                        "value": 0.09967722848681769, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 94612, 
+                        "total_client": 107902, 
+                        "value": 0.8768326815072937, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2477021, 
+                        "total_client": 4101219, 
+                        "value": 0.6039718922593502, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 2863029, 
+                        "total_client": 4115013, 
+                        "value": 0.6957521154854189, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3475311, 
+                        "total_client": 4356238, 
+                        "value": 0.7977780369208478, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 18499788, 
+                        "total_client": 48375435, 
+                        "value": 0.3824211193139659, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 605934, 
+                        "total_client": 6916715, 
+                        "value": 0.08760430348799972, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 151106, 
+                        "total_client": 156755, 
+                        "value": 0.9639628719977035, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 4163085, 
+                        "total_client": 6918769, 
+                        "value": 0.601708916716254, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 4700805, 
+                        "total_client": 6931940, 
+                        "value": 0.6781370006087762, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 6253765, 
+                        "total_client": 7309393, 
+                        "value": 0.8555792526137259, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 32595492, 
+                        "total_client": 81738456, 
+                        "value": 0.39877792651233834, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 295846, 
+                        "total_client": 5658887, 
+                        "value": 0.052279891787908116, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 107574, 
+                        "total_client": 111353, 
+                        "value": 0.9660628811078282, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2974161, 
+                        "total_client": 5662207, 
+                        "value": 0.5252653249872355, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3523497, 
+                        "total_client": 5674266, 
+                        "value": 0.6209608432174312, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4660135, 
+                        "total_client": 6067476, 
+                        "value": 0.7680516577239036, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 21660674, 
+                        "total_client": 58217130, 
+                        "value": 0.3720670187623471, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1439760, 
+                        "total_client": 23218338, 
+                        "value": 0.062009606372342416, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 353310, 
+                        "total_client": 376028, 
+                        "value": 0.9395842862765539, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 11114923, 
+                        "total_client": 23176214, 
+                        "value": 0.4795832054364013, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 12494086, 
+                        "total_client": 23215238, 
+                        "value": 0.5381847043739116, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 17510313, 
+                        "total_client": 25548287, 
+                        "value": 0.6853810981534691, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 102337472, 
+                        "total_client": 268683352, 
+                        "value": 0.38088505014631496, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 129292, 
+                        "total_client": 6542622, 
+                        "value": 0.019761496231938815, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 18, 
+                        "total_client": 18, 
+                        "value": 1.0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1500656, 
+                        "total_client": 6494019, 
+                        "value": 0.2310827855600669, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1406755, 
+                        "total_client": 6494019, 
+                        "value": 0.21662317279946364, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3121102, 
+                        "total_client": 7815180, 
+                        "value": 0.399364058153491, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 29581518, 
+                        "total_client": 80352331, 
+                        "value": 0.36814760233900373, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-11-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 487726, 
+                        "total_client": 4240367, 
+                        "value": 0.11501976126123045, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 283648, 
+                        "total_client": 303743, 
+                        "value": 0.9338420967726005, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2664010, 
+                        "total_client": 4322156, 
+                        "value": 0.6163613715007047, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3058699, 
+                        "total_client": 4349847, 
+                        "value": 0.7031739277266533, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3569670, 
+                        "total_client": 4481403, 
+                        "value": 0.7965518834168674, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 19312366, 
+                        "total_client": 50727067, 
+                        "value": 0.38071126801003496, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 633088, 
+                        "total_client": 7112761, 
+                        "value": 0.08900734890431437, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 556992, 
+                        "total_client": 611380, 
+                        "value": 0.911040596682914, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 4330403, 
+                        "total_client": 7243834, 
+                        "value": 0.5978053886933355, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 5041454, 
+                        "total_client": 7329889, 
+                        "value": 0.6877940443572883, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 6433792, 
+                        "total_client": 7468617, 
+                        "value": 0.8614435577564092, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 33398800, 
+                        "total_client": 83479563, 
+                        "value": 0.4000835509884018, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 345235, 
+                        "total_client": 5903947, 
+                        "value": 0.05847528780322723, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 382364, 
+                        "total_client": 418486, 
+                        "value": 0.9136840897903394, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3192456, 
+                        "total_client": 6000411, 
+                        "value": 0.5320395552904627, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3845477, 
+                        "total_client": 6048992, 
+                        "value": 0.6357219516904634, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4853897, 
+                        "total_client": 6273890, 
+                        "value": 0.7736662580950574, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 22458560, 
+                        "total_client": 60358861, 
+                        "value": 0.3720838933657148, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1644858, 
+                        "total_client": 24457514, 
+                        "value": 0.06725368735350616, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 1223202, 
+                        "total_client": 1333807, 
+                        "value": 0.9170757088544295, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 11807592, 
+                        "total_client": 24712905, 
+                        "value": 0.4777905308987349, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 13450202, 
+                        "total_client": 24875310, 
+                        "value": 0.5407048997580332, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 18136749, 
+                        "total_client": 26666653, 
+                        "value": 0.6801284360658235, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 107698122, 
+                        "total_client": 281593833, 
+                        "value": 0.3824590931293584, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 178809, 
+                        "total_client": 7200439, 
+                        "value": 0.02483306920591925, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 198, 
+                        "total_client": 198, 
+                        "value": 1.0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1620723, 
+                        "total_client": 7146504, 
+                        "value": 0.22678543242961874, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1504572, 
+                        "total_client": 7146582, 
+                        "value": 0.21053029266298212, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3279390, 
+                        "total_client": 8442743, 
+                        "value": 0.3884270787349562, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 32528396, 
+                        "total_client": 87028342, 
+                        "value": 0.3737678468009881, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2016-12-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 522309, 
+                        "total_client": 4331763, 
+                        "value": 0.12057654123736686, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 500578, 
+                        "total_client": 528319, 
+                        "value": 0.9474919508857338, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2766937, 
+                        "total_client": 4454512, 
+                        "value": 0.6211537874406894, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3237198, 
+                        "total_client": 4513123, 
+                        "value": 0.7172855692167043, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3630365, 
+                        "total_client": 4549728, 
+                        "value": 0.797930118020242, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 19405618, 
+                        "total_client": 51167055, 
+                        "value": 0.37926001408523513, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 714524, 
+                        "total_client": 7199046, 
+                        "value": 0.09925259541333671, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 749506, 
+                        "total_client": 908933, 
+                        "value": 0.8245998329909905, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 4424361, 
+                        "total_client": 7455139, 
+                        "value": 0.5934645886548863, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 5163688, 
+                        "total_client": 7571748, 
+                        "value": 0.6819677569829318, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 6486841, 
+                        "total_client": 7516884, 
+                        "value": 0.8629694165827223, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 32990836, 
+                        "total_client": 82612085, 
+                        "value": 0.39934636681788144, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 388899, 
+                        "total_client": 5922015, 
+                        "value": 0.06567004642845382, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 665552, 
+                        "total_client": 729323, 
+                        "value": 0.9125613754125401, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3275933, 
+                        "total_client": 6075308, 
+                        "value": 0.5392208921753432, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3988416, 
+                        "total_client": 6161248, 
+                        "value": 0.6473389806740453, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4861399, 
+                        "total_client": 6278493, 
+                        "value": 0.7742939269025226, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 22321056, 
+                        "total_client": 59805978, 
+                        "value": 0.3732244960528862, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1830445, 
+                        "total_client": 25473639, 
+                        "value": 0.07185643951380484, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 1915854, 
+                        "total_client": 2166793, 
+                        "value": 0.8841887526865742, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 12221763, 
+                        "total_client": 25940312, 
+                        "value": 0.47114942179569774, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 14020050, 
+                        "total_client": 26201552, 
+                        "value": 0.5350847155924199, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 18460700, 
+                        "total_client": 27553877, 
+                        "value": 0.6699855704516646, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 109920790, 
+                        "total_client": 287365224, 
+                        "value": 0.38251249914638247, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 204713, 
+                        "total_client": 8020815, 
+                        "value": 0.02552271807790106, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 218, 
+                        "total_client": 218, 
+                        "value": 1.0, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1754532, 
+                        "total_client": 7955353, 
+                        "value": 0.2205473471761718, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1630748, 
+                        "total_client": 7955433, 
+                        "value": 0.20498544830935037, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3482095, 
+                        "total_client": 9208772, 
+                        "value": 0.3781280500809446, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 35203280, 
+                        "total_client": 93780106, 
+                        "value": 0.375381106948205, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }, 
+    {
+        "FileMonth": "2017-01-01", 
+        "Data": [
+            {
+                "region": "AMEA", 
+                "axes": [
+                    {
+                        "enabled_seat": 549675, 
+                        "total_client": 4393560, 
+                        "value": 0.12510925081255292, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 766706, 
+                        "total_client": 829441, 
+                        "value": 0.9243647227470068, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 2834190, 
+                        "total_client": 4605104, 
+                        "value": 0.615445384078188, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 3390784, 
+                        "total_client": 4691101, 
+                        "value": 0.7228119795331629, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3660446, 
+                        "total_client": 4583837, 
+                        "value": 0.7985550097003885, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 19545404, 
+                        "total_client": 51159426, 
+                        "value": 0.38204893072881624, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Americas", 
+                "axes": [
+                    {
+                        "enabled_seat": 723062, 
+                        "total_client": 7134210, 
+                        "value": 0.10135137597575625, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 1060380, 
+                        "total_client": 1295946, 
+                        "value": 0.8182285373001653, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 4499167, 
+                        "total_client": 7534461, 
+                        "value": 0.5971451707029872, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 5341430, 
+                        "total_client": 7712040, 
+                        "value": 0.6926092188318526, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 6384143, 
+                        "total_client": 7415348, 
+                        "value": 0.8609363983996435, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 32567524, 
+                        "total_client": 81440724, 
+                        "value": 0.3998923683438767, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Europe", 
+                "axes": [
+                    {
+                        "enabled_seat": 409491, 
+                        "total_client": 5976007, 
+                        "value": 0.0685225100974614, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 956830, 
+                        "total_client": 1060972, 
+                        "value": 0.9018428384537952, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 3392630, 
+                        "total_client": 6244378, 
+                        "value": 0.5433095177774312, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 4218498, 
+                        "total_client": 6374648, 
+                        "value": 0.6617617160978928, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 4868280, 
+                        "total_client": 6279932, 
+                        "value": 0.7752122156736729, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 22393466, 
+                        "total_client": 60074135, 
+                        "value": 0.3727638525298783, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "Global", 
+                "axes": [
+                    {
+                        "enabled_seat": 1893374, 
+                        "total_client": 26536570, 
+                        "value": 0.07134961300575018, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 2789204, 
+                        "total_client": 3191716, 
+                        "value": 0.8738885289292656, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 12617106, 
+                        "total_client": 27364506, 
+                        "value": 0.4610755991721539, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 14725859, 
+                        "total_client": 27758432, 
+                        "value": 0.5305003899355698, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 18604288, 
+                        "total_client": 28474381, 
+                        "value": 0.6533693568264047, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 112109982, 
+                        "total_client": 293133363, 
+                        "value": 0.3824538457602999, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }, 
+            {
+                "region": "JP", 
+                "axes": [
+                    {
+                        "enabled_seat": 211146, 
+                        "total_client": 9032793, 
+                        "value": 0.023375494157787075, 
+                        "axis": "Connect threat defense"
+                    }, 
+                    {
+                        "enabled_seat": 5288, 
+                        "total_client": 5357, 
+                        "value": 0.987119656524174, 
+                        "axis": "Predictive machine learning"
+                    }, 
+                    {
+                        "enabled_seat": 1891119, 
+                        "total_client": 8980563, 
+                        "value": 0.21057911402659277, 
+                        "axis": "Block ransomware process (SRP)"
+                    }, 
+                    {
+                        "enabled_seat": 1775147, 
+                        "total_client": 8980643, 
+                        "value": 0.19766368621934977, 
+                        "axis": "Protect unauthorized encryption (ADC)"
+                    }, 
+                    {
+                        "enabled_seat": 3691419, 
+                        "total_client": 10195264, 
+                        "value": 0.3620719385000722, 
+                        "axis": "SmartScan"
+                    }, 
+                    {
+                        "enabled_seat": 37603588, 
+                        "total_client": 100459078, 
+                        "value": 0.3743174708412116, 
+                        "axis": "Web Reputation"
+                    }
+                ]
+            }
+        ]
+    }
+]
