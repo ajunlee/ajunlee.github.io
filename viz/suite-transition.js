@@ -356,7 +356,7 @@ function draw() {
     ClearChart();
 
     if (main_matrix == undefined || main_matrix.length <= 0 || math.sum(main_matrix) <= 0) {
-        ShowMessage("No data wuith this condition.", true);
+        ShowMessage("No data with this condition.", true);
         return;
     }
     ShowMessage("", false);

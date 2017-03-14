@@ -32,6 +32,9 @@ function RadarChart(id, data, options) {
     var _dateIndex = _maxDateIndex = data.length - 1;
     //console.log(_dateIndex);
     //console.log(_maxDateIndex);
+
+    var tooltip = d3.select("#main").append("div").attr("class", "tooltip").style("opacity", 0);
+
     var region_list = [
     { "Region": "Global", "Color": "#7AF67A", "IsHidden": false },
     { "Region": "AMEA", "Color": "#FFC81E", "IsHidden": false },
@@ -291,12 +294,28 @@ function RadarChart(id, data, options) {
                 d3.select(this)
                     .transition().duration(200)
                     .style("fill-opacity", 0.7);
+                //console.log(d);
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", .9);
+                console.log(d);
+                var _html = d.region + " : <br />";
+                for (var i = 0; i < d.axes.length; i++) {
+                    _html += d.axes[i].axis + " : " + Format(d.axes[i].value) + "<br />";
+                }
+               
+                tooltip.html(_html)
+                    .style("left", (d3.event.pageX) + "px")
+                    .style("top", (d3.event.pageY - 28) + "px");
             })
             .on('mouseout', function () {
                 //Bring back all blobs
                 d3.selectAll(".radarArea")
                     .transition().duration(200)
                     .style("fill-opacity", cfg.opacityArea);
+                tooltip.transition()
+                .duration(200)
+                .style("opacity", 0);
             });
 
         //Create the outlines	
@@ -350,29 +369,29 @@ function RadarChart(id, data, options) {
             .attr("cx", function (d, i) { return rScale(d.value) * Math.cos(angleSlice * i - Math.PI / 2); })
             .attr("cy", function (d, i) { return rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2); })
             .style("fill", "none")
-            .style("pointer-events", "all")
-            .on("mouseover", function (d, i) {
-                newX = parseFloat(d3.select(this).attr('cx')) - 10;
-                newY = parseFloat(d3.select(this).attr('cy')) - 10;
+            .style("pointer-events", "all");
+            //.on("mouseover", function (d, i) {
+            //    newX = parseFloat(d3.select(this).attr('cx')) - 10;
+            //    newY = parseFloat(d3.select(this).attr('cy')) - 10;
 
-                tooltip
-                    .attr('x', newX)
-                    .attr('y', newY)
-                    .text(Format(d.value))
-                    .transition().duration(200)
-                    .style('opacity', 1);
-            })
-            .on("mouseout", function () {
-                tooltip.transition().duration(200)
-                    .style("opacity", 0);
-            });
+            //    tooltip
+            //        .attr('x', newX)
+            //        .attr('y', newY)
+            //        .text(Format(d.value))
+            //        .transition().duration(200)
+            //        .style('opacity', 1);
+            //})
+            //.on("mouseout", function () {
+            //    tooltip.transition().duration(200)
+            //        .style("opacity", 0);
+            //});
     }
 
 
     //Set up the small tooltip for when you hover over a circle
-    var tooltip = g.append("text")
-		.attr("class", "tooltip")
-		.style("opacity", 0);
+    //var tooltip = g.append("text")
+	//	.attr("class", "tooltip")
+	//	.style("opacity", 0);
 
     /////////////////////////////////////////////////////////
     /////////////////// Helper Function /////////////////////
