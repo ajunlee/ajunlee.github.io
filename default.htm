@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div.canvas {
+            width: 1200px;
+            height: 700px;
+            overflow: scroll;
+        }
+        
+        rect.stage {
+            stroke-width: 0px;
+            fill: #fff;
+            stroke: #000000;
+        }
+        
+        .stage-title {
+            fill: #000;
+            writing-mode: tb;
+            font-size: 16;
+        }
+        
+        rect.box {
+            stroke: #000;
+            fill: #fff;
+            stroke-width: 1px;
+            cursor: pointer;
+        }
+        
+        rect.box:hover {
+            fill: #ccc;
+        }
+        
+        rect.frame {
+            stroke: #000;
+            fill: #fff;
+            stroke-width: 1px;
+        }
+        
+        text {
+            pointer-events: none;
+        }
+    </style>
+    <script>
+        function mouse_position() {
+            var e = window.event;
+            console.log("x: " + e.clientX + ", y:" + e.clientY);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <svg width="1200" height="1600" style="background-color:#cfcbcb;" onmouseover="mouse_position();">
+            <defs>
+                <line id="line1" x1="5" y1="0" x2="1195" y2="0" stroke-width="1" stroke="black" stroke-dasharray="5,1"/>
+                <rect id="textbox" width="200" height="30" class="box" />
+                <marker id="markerCircle" markerWidth="8" markerHeight="8" refX="5" refY="5">
+                    <circle cx="5" cy="5" r="3" style="stroke: none; fill:#FF0000;"/>
+                </marker>
+                <marker id="markerArrowEnd" markerWidth="10" markerHeight="9" refX="0" refY="4.5"
+                       orient="auto">
+                       <polygon points="0 0, 10 4.5, 0 9" fill="red" />
+                </marker>
+                <marker id="markerArrowStart" markerWidth="10" markerHeight="9" refX="10" refY="4.5"
+                       orient="auto">
+                    <polygon points="10 0, 10 9, 0 4.5" fill="red"/>
+                </marker>
+            </defs>
+        <svg width="300" height="50" x="350" y="10">
+            <rect width="300" height="50" x="0" y="0" stroke="#000" stroke-width="1px" fill="#fff"></rect>
+            <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">這是大標題第一個</text>
+        </svg>
+        <g transform="translate(0, 70)">
+            <use xlink:href="#line1" />
+            <rect class="stage" width="1190" height="150" x="5" y="0" />
+            <text x="20" y="20" class="stage-title">階段名稱</text>
+            <g transform="translate(80,20)">
+                <svg width="200" height="30" x="20" y="70">
+                    <rect width="200" height="30" class="box" />
+                    <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">第一個功能項目</text>
+                </svg>
+                <svg width="200" height="30" x="300" y="0">
+                    <rect width="200" height="30" class="box" />
+                    <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">第二個</text>
+                </svg>
+                <svg width="200" height="30" x="300" y="70">
+                    <rect width="200" height="30" class="box" />
+                    <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">第三個功能項目</text>
+                </svg>
+                <svg width="200" height="30" x="550" y="10">
+                    <rect width="200" height="30" class="box" />
+                    <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">第四個功能項目</text>
+                </svg>
+                <svg width="200" height="30" x="650" y="70">
+                    <rect width="200" height="30" class="box" />
+                    <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">第五個功能項目</text>
+                </svg>
+            </g>
+        </g>
+        <g transform="translate(0, 230)">
+            <use xlink:href="#line1" stroke-dasharray="5,1" />
+            <rect class="stage" width="1190" height="200" x="5" y="0" />
+            <text class="stage-title" x="20" y="20">第二階段(階段名稱)</text>
+            <rect stroke-dasharray="5,1" class="frame" width="400" height="150" x="50" y="30" fill="#fff" stroke="#000" stroke-width="1px" />
+            <svg width="80" height="30" x="270" y="120">
+                <rect width="80" height="30" class="box"></rect>
+                <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">機廠設備</text>
+            </svg>
+            <svg width="80" height="30" x="360" y="120">
+                <rect width="80" height="30" class="box"></rect>
+                <text font-size="16" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">行控中心</text>
+            </svg>
+            <rect stroke-dasharray="10,5" class="frame" width="180" height="130" x="60" y="40" />
+            <rect class="box" x="80" y="90" width="100" height="30"></rect>
+            <rect class="box" x="80" y="130" width="100" height="30"></rect>
+        </g>
+        <g transform="translate(0, 440)">
+            <use xlink:href="#line1" stroke-dasharray="5,1" />
+            <rect class="stage" width="1190" height="200" x="5" y="0" />
+            <text class="stage-title" x="20" y="50">第三階段</text>
+        </g>
+        <g transform="translate(0, 670)">
+            <use xlink:href="#line1" />
+            <rect class="stage" width="1190" height="200" x="5" y="30" />
+            <text class="stage-title" x="20" y="50">第四個階段</text>
+        </g>
+        <g transform="translate(0, 880)">
+            <use xlink:href="#line1" />
+            <rect class="stage" width="1190" height="200" x="5" y="30" />
+            <text class="stage-title" x="20" y="50">第五個階段</text>
+
+        </g>
+        <g transform="translate(0, 1090)">
+            <use xlink:href="#line1" />
+            <rect class="stage" width="1190" height="200" x="5" y="30" />
+            <text class="stage-title" x="20" y="50">第六個階段</text>
+
+        </g>
+        <g transform="translate(0, 1300)">
+            <use xlink:href="#line1" />
+            <rect class="stage" width="1190" height="200" x="5" y="30" />
+            <text class="stage-title" x="20" y="50">第七個階段</text>
+        </g>
+
+        <g>
+            <path d="M480, 60, L480, 76, L480, 76, L480, 80" style="stroke: #FF0000; stroke-width:1px; fill:none;marker-start: url(#markerCircle); marker-end: url(#markerArrowEnd)"></path>
+            <path d="M480, 120, L480, 150" style="stroke: #FF0000; stroke-width:1px; fill:none;marker-start: url(#markerCircle); marker-end: url(#markerArrowEnd)"></path>
+            <path d="M370, 172, L310, 172" style="stroke: #FF0000; stroke-width:1px; fill:none;marker-start: url(#markerArrowStart); marker-end: url(#markerArrowEnd)"></path>
+            <path d="M720, 130, L720, 165, L588, 165" style="stroke: #FF0000; stroke-width:1px; fill:none;marker-start: url(#markerCircle); marker-end: url(#markerArrowEnd)"></path>
+            <path d="M720, 180, L588, 180" style="stroke: #FF0000; stroke-width:1px; fill:none;marker-start: url(#markerArrowStart); marker-end: url(#markerArrowEnd)"></path>
+        </g>
+        </svg>
+    </div>
+
+</body>
+
+</html>
