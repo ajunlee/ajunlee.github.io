@@ -6,7 +6,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-title" content="xxx app" />
 	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
 
 	<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
@@ -49,6 +49,13 @@ function date_time(id)
         setTimeout('date_time("'+id+'");','1000');
         return true;
 }	
+	window.addEventListener("load",function() {
+	// Set a timeout...
+	setTimeout(function(){
+		// Hide the address bar!
+		window.scrollTo(0, 1);
+	}, 0);
+});
 	</script>
 </head>
 <body>
