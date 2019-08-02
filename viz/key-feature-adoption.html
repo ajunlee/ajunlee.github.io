@@ -1,7 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/ >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53776-21"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53776-21');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title>OfficeScan key feature adoption rate</title>
 
     <!-- Google fonts -->
@@ -13,9 +26,8 @@
     <!-- D3.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
     <style>
-        body {
-        }
-
+        body {}
+        
         svg {
             font-family: 'Open Sans', sans-serif;
             font-size: 11px;
@@ -24,35 +36,36 @@
             text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
             cursor: default;
         }
-
+        
         .legend {
             font-family: 'Raleway', sans-serif;
             fill: #333333;
         }
-
+        
         .tooltip {
             fill: #333333;
         }
-
+        
         .radarChart {
             float: left;
         }
-
+        
         .hidden {
             display: none;
         }
-
-        #regionList > label {
+        
+        #regionList>label {
             display: block;
             padding: 6px;
         }
-
-            #regionList > label > span {
-                padding: 5px;
-            }
+        
+        #regionList>label>span {
+            padding: 5px;
+        }
     </style>
 
 </head>
+
 <body>
     <div id="main">
         <div>
@@ -79,14 +92,20 @@
         <div>
             <div>Note : </div>
             <p>
-                This diagram shows OfficeScan key feature adoption rate in terms of deployed seat count by region. Feature adoption rate = deployed seat count with feature enabled / deployed seat count with feature available (For example, predictive machine learning adoption rate = deployed seat count with machine learning enabled / deployed seat count of all OfficeScan XG). Historical adoption rate is also available by clicking the date scroll-bar.
+                This diagram shows OfficeScan key feature adoption rate in terms of deployed seat count by region. Feature adoption rate = deployed seat count with feature enabled / deployed seat count with feature available (For example, predictive machine learning
+                adoption rate = deployed seat count with machine learning enabled / deployed seat count of all OfficeScan XG). Historical adoption rate is also available by clicking the date scroll-bar.
             </p>
         </div>
     </div>
 
     <script src="radarChart.v2.js"></script>
     <script>
-        var margin = { top: 100, right: 100, bottom: 100, left: 100 },
+        var margin = {
+                top: 100,
+                right: 100,
+                bottom: 100,
+                left: 100
+            },
             width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
             height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
         var radarChartOptions = {
@@ -100,7 +119,7 @@
             wrapWidth: 10
         };
         //Call function to draw the Radar chart
-        d3.json("../data/featureGroup.json", function (error, data) {
+        d3.json("../data/featureGroup.json", function(error, data) {
             if (error) throw error;
             RadarChart(".radarChart", data, radarChartOptions);
             //var _maxDate = new Date(data[data.length - 1].FileMonth);

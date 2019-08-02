@@ -1,20 +1,33 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53776-21"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53776-21');
+    </script>
     <meta charset="utf-8">
     <title>Product deployment journey for Smart Protection Suite - EndPoint</title>
     <script src="../scripts/d3.min.js"></script>
     <link rel="stylesheet" type="text/css" href="sequences.css" />
     <link href="../css/viz_main.css" rel="stylesheet" />
 </head>
+
 <body>
     <div id="main">
         <h1>Product deployment journey for Smart Protection Suite - EndPoint</h1>
         <div id="sequence"></div>
         <div id="chart">
             <div id="explanation" style="visibility: hidden;">
-                <span id="percentage"></span><br />
-                of SPS customers install products with this sequence
+                <span id="percentage"></span><br /> of SPS customers install products with this sequence
             </div>
         </div>
         <div id="gridActPanel" style="clear:both;">
@@ -26,8 +39,7 @@
         <div>
             <h4>Note:</h4>
             <p>
-                This diagram shows product deployment sequence for active customers of Smart Protection Suite – EndPoint.
-                The inner circle indicates the first product installed; the second inner circle indicates the second product installed and so on.
+                This diagram shows product deployment sequence for active customers of Smart Protection Suite – EndPoint. The inner circle indicates the first product installed; the second inner circle indicates the second product installed and so on.
             </p>
         </div>
         <h4>Region :</h4>
@@ -47,36 +59,37 @@
         </div>
     </div>
 
-        <script type="text/javascript" src="suite-product.js"></script>
-        <script type="text/javascript">
-            var colors = {
-                "Control Manager": "FFC81E",
-                "Endpoint Application Control": "800080",
-                "Endpoint Encryption": "960A96",
-                "OfficeScan": "A83CA8",
-                "OfficeScan Plug-in DLP": "A30FE2",
-                "OfficeScan Plug-in Security for Mac": "AD46E0",
-                "OfficeScan Plug-in VDI": "D36EEC",
-                "Vulnerability Protection": "F88EF4",
-                "Mobile Security": "46649B",
-                "Server Protect for Linux": "50D6FF",
-                "Server Protect for Windows/NetWare": "78EAFF",
-                "Worry-Free Business Security Service": "7AF67A",
-                "end": "EEEEEE"
-            };
-            var csv;
-            d3.text("../data/endpoint.csv", function (text) {
-                csv = d3.csv.parseRows(text);
-                initializeBreadcrumbTrail();
-                drawLegend();
-                var json = buildHierarchy(csv);
-                createVisualization(json);
-                // Add the mouseleave handler to the bounding circle.
-                d3.select("#container").on("mouseleave", mouseleave);
+    <script type="text/javascript" src="suite-product.js"></script>
+    <script type="text/javascript">
+        var colors = {
+            "Control Manager": "FFC81E",
+            "Endpoint Application Control": "800080",
+            "Endpoint Encryption": "960A96",
+            "OfficeScan": "A83CA8",
+            "OfficeScan Plug-in DLP": "A30FE2",
+            "OfficeScan Plug-in Security for Mac": "AD46E0",
+            "OfficeScan Plug-in VDI": "D36EEC",
+            "Vulnerability Protection": "F88EF4",
+            "Mobile Security": "46649B",
+            "Server Protect for Linux": "50D6FF",
+            "Server Protect for Windows/NetWare": "78EAFF",
+            "Worry-Free Business Security Service": "7AF67A",
+            "end": "EEEEEE"
+        };
+        var csv;
+        d3.text("../data/endpoint.csv", function(text) {
+            csv = d3.csv.parseRows(text);
+            initializeBreadcrumbTrail();
+            drawLegend();
+            var json = buildHierarchy(csv);
+            createVisualization(json);
+            // Add the mouseleave handler to the bounding circle.
+            d3.select("#container").on("mouseleave", mouseleave);
 
-            });
-            // Hack to make this example display correctly in an iframe on bl.ocks.org
-            d3.select(self.frameElement).style("height", "700px");
-        </script>
+        });
+        // Hack to make this example display correctly in an iframe on bl.ocks.org
+        d3.select(self.frameElement).style("height", "700px");
+    </script>
 </body>
+
 </html>

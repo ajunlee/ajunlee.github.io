@@ -1,44 +1,57 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53776-21"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-53776-21');
+    </script>
     <title>Endpoint suite transition</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <link href="../css/viz_main.css" rel="stylesheet" />
     <style>
         #circle circle {
             fill: none;
             pointer-events: all;
         }
-
+        
         .group path {
             fill-opacity: 1.0;
         }
-
+        
         path.chord {
             stroke: #000;
             stroke-width: .25px;
         }
-
+        
         #circle:hover path.fade {
             display: none;
         }
-
-
+        
         .msgpanel {
-            position:absolute;
-            top:300px;
-            left:200px;
-            font-size:24px;
-            border:solid 10px rgba(255, 0,0, .5);
-            background-color:rgba(255, 0,0, .3);
-            border-radius:10px;
-            padding:10px;
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            font-size: 24px;
+            border: solid 10px rgba(255, 0, 0, .5);
+            background-color: rgba(255, 0, 0, .3);
+            border-radius: 10px;
+            padding: 10px;
         }
     </style>
     <script src="../scripts/math.min.js"></script>
     <script src="../scripts/d3.min.js"></script>
     <script src="//d3js.org/queue.v1.min.js"></script>
 </head>
+
 <body>
     <div id="main">
         <h1>Endpoint suite transition</h1>
@@ -69,4 +82,5 @@
     </div>
     <script src="suite-transition.js"></script>
 </body>
+
 </html>
