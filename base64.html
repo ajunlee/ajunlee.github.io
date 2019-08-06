@@ -6,6 +6,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53776-21"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -28,52 +29,62 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="scripts/b64.js"></script>
     <script>
-    function b64encode(){
-        var txt = document.getElementById("tbxplain").value;
-        var encoded = Conv86.utf16.to64(txt);
-        document.getElementById("tbxencoded").value = encoded;
-        document.getElementById("msg").innerHTML = "powershell -nop -w hidden -noe -e \"" + encoded + "\"";
-    }
-    function b64decode(){
-        var encoded = document.getElementById("tbxencoded").value;
-        var txt = Conv86.utf16.from64(encoded);
-        document.getElementById("tbxplain").value = txt;
-        document.getElementById("msg").innerHTML = "";
-    }
-    </script>
-    <style>
-        body{
-            margin-top: 70px;
+        function b64encode() {
+            var txt = document.getElementById("tbxplain").value;
+            var encoded = Conv86.utf16.to64(txt);
+            document.getElementById("tbxencoded").value = encoded;
+            document.getElementById("msg").innerHTML = "powershell -nop -w hidden -noe -e \"" + encoded + "\"";
         }
-    </style>
+
+        function b64decode() {
+            var encoded = document.getElementById("tbxencoded").value;
+            var txt = Conv86.utf16.from64(encoded);
+            document.getElementById("tbxplain").value = txt;
+            document.getElementById("msg").innerHTML = "";
+        }
+    </script>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Base64 Encoder for powershell encodedcommand</a>
+            <a class="navbar-brand" href="/index.html">Tool Kits</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/base64.html">Base64 Encoder <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md">
-                <textarea class="form-control" id="tbxplain" rows="3">whoami /user</textarea>
+            <div class="col">
+                <div class="form-group">
+                    <textarea class="form-control" id="tbxplain" rows="3">whoami /user</textarea>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md">
-<button onclick="b64encode();" class="btn btn-primary">Encode</button>
-<button onclick="b64decode();" class="btn btn-primary">Decode</button>
+            <div class="col">
+                <div class="form-group">
+                    <button onclick="b64encode();" class="btn btn-primary">Encode</button>
+                    <button onclick="b64decode();" class="btn btn-primary">Decode</button>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md">
-                <textarea class="form-control" id="tbxencoded" rows="3"></textarea>
-                <br />
+            <div class="col">
+                <div class="form-group">
+                    <textarea class="form-control" id="tbxencoded" rows="3"></textarea>
+                </div>
+                <p>Powershell command : </p>
                 <div id="msg"></div>
             </div>
         </div>
