@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日文學習遊戲</title>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Klee One', sans-serif;
+        }
+        .game-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f7fafc; /* Tailwind bg-gray-100 */
+            padding: 1rem;
+        }
+        .game-title {
+            font-size: 2.25rem; /* Tailwind text-3xl */
+            font-weight: 600;  /* Tailwind font-semibold */
+            margin-bottom: 1.5rem; /* Tailwind mb-6 */
+            color: #1a202c; /* Tailwind text-gray-900 */
+        }
+        .question-card {
+            background-color: white; /* Tailwind bg-white */
+            padding: 2rem; /* Tailwind p-8 */
+            border-radius: 0.75rem; /* Tailwind rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind shadow-md */
+            margin-bottom: 1.5rem; /* Tailwind mb-6 */
+            width: 100%;
+            max-width: 450px; /* Increased max-width */
+            text-align: center;
+        }
+        .question-text {
+            font-size: 1.5rem; /* Tailwind text-2xl */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+            color: #2d3748; /* Tailwind text-gray-800 */
+            min-height: 3rem; /* Add min height to handle different question lengths */
+            display: flex; /* For vertical centering */
+            align-items: center;
+            justify-content: center;
+            word-wrap: break-word; /* handle long words */
+        }
+        .answer-options {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch; /* Stretch buttons to container width */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+            width: 100%; /* Ensure buttons take full width */
+        }
+        .answer-option {
+            padding: 0.8rem; /* Tailwind py-3, adjusted for better button height */
+            border-radius: 0.5rem; /* Tailwind rounded-md */
+            background-color: #f0f0f0; /* Tailwind bg-gray-200 */
+            margin-bottom: 0.75rem; /* Tailwind mb-3 */
+            cursor: pointer;
+            text-align: center;
+            font-size: 1rem; /* Tailwind text-lg */
+            transition: background-color 0.2s ease; /* Smooth transition */
+            border: 1px solid #e2e8f0; /* Tailwind border-gray-300 */
+            /* width: 100%;  Remove fixed width, use stretch */
+        }
+        .answer-option:hover {
+            background-color: #d3d6da; /* Tailwind bg-gray-300 on hover */
+        }
+        .answer-option.correct {
+            background-color: #48bb78; /* Tailwind bg-green-500 */
+            color: white; /* Tailwind text-white */
+            border-color: #48bb78;
+        }
+        .answer-option.incorrect {
+            background-color: #f56565; /* Tailwind bg-red-500 */
+            color: white; /* Tailwind text-white */
+            border-color: #f56565;
+        }
+        .feedback {
+            font-size: 1.25rem; /* Tailwind text-xl */
+            font-weight: 600; /* Tailwind font-semibold */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+            min-height: 3rem; /* Ensure feedback message area has enough height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            word-wrap: break-word;
+        }
+        .correct-feedback {
+            color: #48bb78; /* Tailwind text-green-500 */
+        }
+        .incorrect-feedback {
+            color: #f56565; /* Tailwind text-red-500 */
+        }
+
+        .next-question-button {
+            padding: 0.75rem 1.5rem; /* Tailwind py-3 px-6 */
+            border-radius: 0.5rem; /* Tailwind rounded-md */
+            background-color: #68d391; /* Tailwind bg-green-400 */
+            color: #1a202c; /* Tailwind text-gray-900 */
+            font-size: 1rem; /* Tailwind text-lg */
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 0.5rem;
+            border: none;
+        }
+        .next-question-button:hover {
+            background-color: #48bb78; /* Tailwind bg-green-500 */
+        }
+        .game-over-message {
+            font-size: 1.5rem; /* Tailwind text-2xl */
+            font-weight: 600; /* Tailwind font-semibold */
+            margin-bottom: 1rem; /* Tailwind mb-4 */
+            color: #2d3748; /* Tailwind text-gray-800 */
+            text-align: center;
+        }
+        .play-again-button {
+            padding: 0.75rem 1.5rem; /* Tailwind py-3 px-6 */
+            border-radius: 0.5rem; /* Tailwind rounded-md */
+            background-color: #4299e1; /* Tailwind bg-blue-500 */
+            color: white; /* Tailwind text-white */
+            font-size: 1rem; /* Tailwind text-lg */
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 0.5rem;
+            border: none;
+        }
+        .play-again-button:hover {
+            background-color: #3182ce; /* Tailwind bg-blue-600 */
+        }
+
+        .explanation-box {
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #4a5568;
+            display: none; /* Initially hidden */
+            max-width: 450px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .explanation-box.show {
+            display: block; /* Show when needed */
+        }
+
+        .show-explanation-button {
+            margin-top: 0.75rem;
+            padding: 0.5rem 1rem;
+            background-color: #a0aec0;
+            color: #1a202c;
+            font-size: 0.875rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .show-explanation-button:hover {
+            background-color: #718096;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">日文學習遊戲</h1>
+        <div class="question-card">
+            <div class="question-text" id="question-text"></div>
+            <div class="answer-options" id="answer-options">
+                </div>
+            <div class="feedback" id="feedback"></div>
+            <button class="next-question-button" id="next-question-button" style="display: none;">下一題</button>
+            <button class="play-again-button" id="play-again-button" style="display: none;">再玩一次</button>
+            <button class="show-explanation-button" id="show-explanation-button">顯示解釋</button>
+            <div class="explanation-box" id="explanation-box"></div>
+        </div>
+    </div>
+
+    <script>
+        const questionTextElement = document.getElementById('question-text');
+        const answerOptionsElement = document.getElementById('answer-options');
+        const feedbackElement = document.getElementById('feedback');
+        const nextQuestionButton = document.getElementById('next-question-button');
+        const playAgainButton = document.getElementById('play-again-button');
+        const showExplanationButton = document.getElementById('show-explanation-button');
+        const explanationBox = document.getElementById('explanation-box');
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let currentQuestions = []; // To hold shuffled questions
+        let gameMode = 'hiragana'; // Default game mode
+
+        // 問題資料 (增加了英文解釋)
+        const questions = {
+            hiragana: [
+                {
+                    question: "あ",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "a",
+                    explanation: "「あ」是平假名，發音為 'a'，類似中文的「阿」。",
+                },
+                {
+                    question: "い",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "i",
+                    explanation: "「い」是平假名，發音為 'i'，類似中文的「一」。",
+                },
+                {
+                    question: "う",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "u",
+                    explanation: "「う」是平假名，發音為 'u'，類似中文的「烏」。",
+                },
+                {
+                    question: "え",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "e",
+                    explanation: "「え」是平假名，發音為 'e'，類似中文的「欸」。",
+                },
+                {
+                    question: "お",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "o",
+                    explanation: "「お」是平假名，發音為 'o'，類似中文的「喔」。",
+                },
+                {
+                    question: "か",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ka",
+                    explanation: "「か」是平假名，發音為 'ka'，類似中文的「咖」。",
+                },
+                {
+                    question: "き",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ki",
+                    explanation: "「き」是平假名，發音為 'ki'，類似中文的「ki」。",
+                },
+                {
+                    question: "く",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ku",
+                    explanation: "「く」是平假名，發音為 'ku'，類似中文的「哭」。",
+                },
+                {
+                    question: "け",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ke",
+                    explanation: "「け」是平假名，發音為 'ke'，類似中文的「ke」。",
+                },
+                {
+                    question: "こ",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "ko",
+                    explanation: "「こ」是平假名，發音為 'ko'，類似中文的「摳」。",
+                },
+                {
+                    question: "さ",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "sa",
+                    explanation: "「さ」是平假名，發音為 'sa'，類似中文的「撒」。",
+                },
+                {
+                    question: "し",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "shi",
+                    explanation: "「し」是平假名，發音為 'shi'，類似中文的「西」。",
+                },
+                {
+                    question: "す",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "su",
+                    explanation: "「す」是平假名，發音為 'su'，類似中文的「斯」。",
+                },
+                 {
+                    question: "せ",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "se",
+                    explanation: "「せ」是平假名，發音為 'se'，類似中文的「se」。",
+                },
+                {
+                    question: "そ",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "so",
+                    explanation: "「そ」是平假名，發音為 'so'，類似中文的「so」。",
+                },
+                {
+                    question: "た",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "ta",
+                    explanation: "「た」是平假名，發音為 'ta'，類似中文的「ta」。",
+                },
+                {
+                    question: "ち",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "chi",
+                    explanation: "「ち」是平假名，發音為 'chi'，類似中文的「chi」。",
+                },
+                {
+                    question: "つ",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "tsu",
+                    explanation: "「つ」是平假名，發音為 'tsu'，類似中文的「ㄘ」。",
+                },
+                {
+                    question: "て",
+                     answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "te",
+                    explanation: "「て」是平假名，發音為 'te'，類似中文的「te」。",
+                },
+                {
+                    question: "と",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "to",
+                    explanation: "「と」是平假名，發音為 'to'，類似中文的「to」。",
+                },
+                {
+                    question: "な",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "na",
+                    explanation: "「な」是平假名，發音為 'na'，類似中文的「na」。",
+                },
+            ],
+            katakana: [
+                {
+                    question: "ア",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "a",
+                    explanation: "「ア」是片假名，發音為 'a'，類似中文的「阿」。",
+                },
+                {
+                    question: "イ",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "i",
+                    explanation: "「イ」是片假名，發音為 'i'，類似中文的「一」。",
+                },
+                {
+                    question: "ウ",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "u",
+                    explanation: "「ウ」是片假名，發音為 'u'，類似中文的「烏」。",
+                },
+                {
+                    question: "エ",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "e",
+                    explanation: "「エ」是片假名，發音為 'e'，類似中文的「欸」。",
+                },
+                 {
+                    question: "オ",
+                    answers: ["a", "i", "u", "e"],
+                    correctAnswer: "o",
+                    explanation: "「オ」是片假名，發音為 'o'，類似中文的「喔」。",
+                },
+                {
+                    question: "カ",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ka",
+                    explanation: "「カ」是片假名，發音為 'ka'，類似中文的「咖」。",
+                },
+                {
+                    question: "キ",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ki",
+                    explanation: "「キ」是片假名，發音為 'ki'，類似中文的「ki」。",
+                },
+                {
+                    question: "ク",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ku",
+                    explanation: "「ク」是片假名，發音為 'ku'，類似中文的「哭」。",
+                },
+                {
+                    question: "ケ",
+                    answers: ["ka", "ki", "ku", "ke"],
+                    correctAnswer: "ke",
+                    explanation: "「ケ」是片假名，發音為 'ke'，類似中文的「ke」。",
+                },
+                {
+                    question: "コ",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "ko",
+                    explanation: "「コ」是片假名，發音為 'ko'，類似中文的「摳」。",
+                },
+                {
+                    question: "サ",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "sa",
+                    explanation: "「サ」是片假名，發音為 'sa'，類似中文的「撒」。",
+                },
+                {
+                    question: "シ",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "shi",
+                    explanation: "「シ」是片假名，發音為 'shi'，類似中文的「西」。",
+                },
+                {
+                    question: "ス",
+                    answers: ["ko", "sa", "shi", "su"],
+                    correctAnswer: "su",
+                    explanation: "「ス」是片假名，發音為 'su'，類似中文的「斯」。",
+                },
+                {
+                    question: "セ",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "se",
+                    explanation: "「セ」是片假名，發音為 'se'，類似中文的「se」。",
+                },
+                {
+                    question: "ソ",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "so",
+                    explanation: "「ソ」是片假名，發音為 'so'，類似中文的「so」。",
+                },
+                {
+                    question: "タ",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "ta",
+                    explanation: "「タ」是片假名，發音為 'ta'，類似中文的「ta」。",
+                },
+                {
+                    question: "チ",
+                    answers: ["se", "so", "ta", "chi"],
+                    correctAnswer: "chi",
+                    explanation: "「チ」是片假名，發音為 'chi'，類似中文的「chi」。",
+                },
+                {
+                    question: "ツ",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "tsu",
+                    explanation: "「ツ」是片假名，發音為 'tsu'，類似中文的「ㄘ」。",
+                },
+                {
+                    question: "テ",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "te",
+                    explanation: "「テ」是片假名，發音為 'te'，類似中文的「te」。",
+                },
+                {
+                    question: "ト",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "to",
+                    explanation: "「ト」是片假名，發音為 'to'，類似中文的「to」。",
+                },
+                {
+                    question: "ナ",
+                    answers: ["tsu", "te", "to", "na"],
+                    correctAnswer: "na",
+                    explanation: "「ナ」是片假名，發音為 'na'，類似中文的「na」。",
+                },
+            ],
+        };
+
+        function initializeGame() {
+            currentQuestionIndex = 0;
+            score = 0;
+            feedbackElement.textContent = '';
+            nextQuestionButton.style.display = 'none';
+            playAgainButton.style.display = 'none';
+            explanationBox.classList.remove('show');
+            showExplanationButton.style.display = 'block'; // Show explanation button at the start of a new game
+
+            // Select questions based on game mode
+            currentQuestions = (gameMode === 'hiragana') ? questions.hiragana : questions.katakana;
+            // Shuffle the questions
+            currentQuestions = shuffleArray(currentQuestions);
+            loadNextQuestion();
+        }
+
+        // Function to shuffle array (Fisher-Yates algorithm)
+        function shuffleArray(array) {
+            let currentIndex = array.length, randomIndex;
+            while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]];
+            }
+            return array;
+        }
+
+        function loadNextQuestion() {
+            answerOptionsElement.innerHTML = ''; // Clear previous options
+            feedbackElement.textContent = '';
+            nextQuestionButton.style.display = 'none';
+            explanationBox.classList.remove('show'); // Hide explanation box when loading a new question
+            showExplanationButton.style.display = 'block';
+
+            if (currentQuestionIndex >= currentQuestions.length) {
+                endGame();
+                return;
+            }
+
+            const currentQuestion = currentQuestions[currentQuestionIndex];
+            questionTextElement.textContent = currentQuestion.question;
+
+            const shuffledAnswers = shuffleArray(currentQuestion.answers); // Shuffle answers
+
+            shuffledAnswers.forEach(answer => {
+                const answerOption = document.createElement('div');
+                answerOption.classList.add('answer-option');
+                answerOption.textContent = answer;
+                answerOption.addEventListener('click', () => handleAnswerSelection(answer));
+                answerOptionsElement.appendChild(answerOption);
+            });
+        }
+
+        function handleAnswerSelection(selectedAnswer) {
+            const currentQuestion = currentQuestions[currentQuestionIndex];
+            const correct = selectedAnswer === currentQuestion.correctAnswer;
+
+            // Disable further clicks on answer options
+            Array.from(answerOptionsElement.children).forEach(child => {
+                child.style.pointerEvents = 'none';
+            });
+
+            let selectedOptionElement = null;
+             for (let i = 0; i < answerOptionsElement.children.length; i++) {
+                if (answerOptionsElement.children[i].textContent === selectedAnswer) {
+                    selectedOptionElement = answerOptionsElement.children[i];
+                    break;
+                }
+            }
+
+            if (correct) {
+                score++;
+                feedbackElement.textContent = "答對了！";
+                feedbackElement.classList.remove('incorrect-feedback');
+                feedbackElement.classList.add('correct-feedback');
+                if (selectedOptionElement) {
+                    selectedOptionElement.classList.add('correct');
+                }
+            } else {
+                feedbackElement.textContent = "答錯了！";
+                feedbackElement.classList.remove('correct-feedback');
+                feedbackElement.classList.add('incorrect-feedback');
+                 if (selectedOptionElement) {
+                    selectedOptionElement.classList.add('incorrect');
+                }
+                //show the correct answer
+                for(let i=0; i<answerOptionsElement.children.length; i++){
+                    if(answerOptionsElement.children[i].textContent === currentQuestion.correctAnswer){
+                        answerOptionsElement.children[i].classList.add('correct')
+                    }
+                }
+            }
+
+            nextQuestionButton.style.display = 'inline-block';
+        }
+
+        function loadExplanation() {
+            const currentQuestion = currentQuestions[currentQuestionIndex];
+            explanationBox.textContent = currentQuestion.explanation;
+            explanationBox.classList.toggle('show');
+        }
+
+        function loadNextQuestion() {
+            answerOptionsElement.innerHTML = ''; // Clear previous options
+            feedbackElement.textContent = '';
+            nextQuestionButton.style.display = 'none';
+            explanationBox.classList.remove('show'); // Hide explanation when loading next question.
+            showExplanationButton.style.display = 'block';
+
+            currentQuestionIndex++;
+            if (currentQuestionIndex < currentQuestions.length) {
+                const currentQuestion = currentQuestions[currentQuestionIndex];
+                questionTextElement.textContent = currentQuestion.question;
+
+                const shuffledAnswers = shuffleArray(currentQuestion.answers);
+
+                shuffledAnswers.forEach(answer => {
+                    const answerOption = document.createElement('div');
+                    answerOption.classList.add('answer-option');
+                    answerOption.textContent = answer;
+                    answerOption.addEventListener('click', () => handleAnswerSelection(answer));
+                    answerOptionsElement.appendChild(answerOption);
+                });
+            } else {
+                endGame();
+            }
+        }
+
+        function endGame() {
+            questionTextElement.textContent = "遊戲結束！";
+            answerOptionsElement.innerHTML = '';
+            feedbackElement.textContent = `你的得分是 ${score} / ${currentQuestions.length}。`;
+            nextQuestionButton.style.display = 'none';
+            playAgainButton.style.display = 'inline-block';
+            showExplanationButton.style.display = 'none';
+        }
+
+        nextQuestionButton.addEventListener('click', loadNextQuestion);
+        playAgainButton.addEventListener('click', initializeGame);
+        showExplanationButton.addEventListener('click', loadExplanation);
+
+
+        // Initial call to start the game
+        initializeGame();
+    </script>
+</body>
+</html>
