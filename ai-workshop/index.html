@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>數獨遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧩 數獨遊戲</h1>
+        </header>
+        
+        <!-- 開始畫面 -->
+        <div id="start-screen" class="screen">
+            <div class="difficulty-selection">
+                <h2>選擇難度等級</h2>
+                <div class="difficulty-buttons">
+                    <button class="difficulty-btn" data-level="1">初級 ⭐</button>
+                    <button class="difficulty-btn" data-level="2">簡單 ⭐⭐</button>
+                    <button class="difficulty-btn" data-level="3">中等 ⭐⭐⭐</button>
+                    <button class="difficulty-btn" data-level="4">困難 ⭐⭐⭐⭐</button>
+                    <button class="difficulty-btn" data-level="5">專家 ⭐⭐⭐⭐⭐</button>
+                </div>
+                <button id="leaderboard-btn" class="secondary-btn">查看排名 🏆</button>
+            </div>
+        </div>
+
+        <!-- 遊戲畫面 -->
+        <div id="game-screen" class="screen hidden">
+            <!-- 遊戲狀態列 -->
+            <div class="game-status">
+                <div class="status-item">
+                    <span class="status-label">時間：</span>
+                    <span id="timer">00:00</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">錯誤：</span>
+                    <span id="errors">0/5</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">金幣：</span>
+                    <span id="coins">💰 0</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">難度：</span>
+                    <span id="current-difficulty"></span>
+                </div>
+            </div>
+
+            <!-- 數獨網格 -->
+            <div class="sudoku-container">
+                <div id="sudoku-grid" class="sudoku-grid">
+                    <!-- 9x9 網格將由JavaScript生成 -->
+                </div>
+            </div>
+
+            <!-- 數字選擇面板 -->
+            <div class="number-panel">
+                <div class="number-buttons">
+                    <button class="number-btn" data-number="1">1</button>
+                    <button class="number-btn" data-number="2">2</button>
+                    <button class="number-btn" data-number="3">3</button>
+                    <button class="number-btn" data-number="4">4</button>
+                    <button class="number-btn" data-number="5">5</button>
+                    <button class="number-btn" data-number="6">6</button>
+                    <button class="number-btn" data-number="7">7</button>
+                    <button class="number-btn" data-number="8">8</button>
+                    <button class="number-btn" data-number="9">9</button>
+                    <button class="number-btn erase-btn" data-number="0">清除</button>
+                </div>
+            </div>
+
+            <!-- 遊戲控制按鈕 -->
+            <div class="game-controls">
+                <button id="hint-btn" class="control-btn">提示 💡</button>
+                <button id="pause-btn" class="control-btn">暫停 ⏸️</button>
+                <button id="restart-btn" class="control-btn">重新開始 🔄</button>
+                <button id="back-btn" class="control-btn">回到首頁 🏠</button>
+            </div>
+        </div>
+
+        <!-- 排名畫面 -->
+        <div id="leaderboard-screen" class="screen hidden">
+            <div class="leaderboard-container">
+                <h2>🏆 排行榜</h2>
+                <div class="difficulty-tabs">
+                    <button class="tab-btn active" data-difficulty="1">初級</button>
+                    <button class="tab-btn" data-difficulty="2">簡單</button>
+                    <button class="tab-btn" data-difficulty="3">中等</button>
+                    <button class="tab-btn" data-difficulty="4">困難</button>
+                    <button class="tab-btn" data-difficulty="5">專家</button>
+                </div>
+                <div id="leaderboard-list" class="leaderboard-list">
+                    <!-- 排名列表將由JavaScript生成 -->
+                </div>
+                <button id="back-to-menu" class="secondary-btn">返回主選單</button>
+            </div>
+        </div>
+
+        <!-- 遊戲結束彈窗 -->
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="game-over-title"></h2>
+                <div id="game-over-stats"></div>
+                <div class="modal-buttons">
+                    <button id="play-again-btn" class="primary-btn">再玩一次</button>
+                    <button id="back-to-menu-btn" class="secondary-btn">返回主選單</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 暫停彈窗 -->
+        <div id="pause-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>遊戲已暫停</h2>
+                <p>點擊繼續遊戲按鈕恢復遊戲</p>
+                <button id="resume-btn" class="primary-btn">繼續遊戲</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
